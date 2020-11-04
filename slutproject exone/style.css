@@ -1,0 +1,332 @@
+body {
+  background-image: url("grey.jpg");
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+}
+
+.header h2 {
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+.navmenubar {
+  float: left;
+}
+.header li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 30px;
+}
+.header li a {
+  color: white;
+  text-decoration: none;
+}
+.navmenubar li a:hover {
+  color: darkorange;
+  border: 1px solid darkorange;
+}
+.main {
+  text-align: left;
+  height: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: underline;
+  font-size: 15px;
+  font-weight: bold;
+
+  text-align: center;
+}
+.picture {
+  max-width: 10%;
+}
+.aside1 {
+  color: white;
+}
+.newsdiv {
+  color: white;
+  font-size: 19px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.footer {
+  width: 100vw;
+  display: block;
+  padding: 10px 0;
+  box-sizing: border-box;
+  order: 4;
+}
+
+.inner-footer {
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+
+.inner-footer .logo-container {
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
+}
+
+.inner-footer .logo-container img {
+  width: 100px;
+  height: auto;
+  opacity: 0.7;
+}
+
+.inner-footer .footer-box1 {
+  width: 12%;
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+.inner-footer .footer-box1:last-child {
+  margin-right: 0;
+}
+
+.inner-footer .footer-box1 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inner-footer .footer-box1 a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  color: white;
+  display: block;
+  width: 100%;
+  padding-bottom: 6px;
+}
+
+.accountcreation {
+  color: white;
+}
+
+
+.contact1{
+  
+  float: left;
+}
+
+.contact1 h3{
+  color: white;
+  font-size: 40px;
+  font-family: italic;
+  
+}
+.contactlist{
+  color: white;
+  font-size: 20px;
+}
+.contactlist a{
+  color: pink;
+  
+}
+.container{
+
+  display: grid;
+  height: 80vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas: "secondnav secondnav secondnav secondnav"
+  "sidebar secondmain secondmain secondmain"
+  "sidebar content1 content2 content3"
+  "sidebar secondfooter secondfooter secondfooter";
+  grid-gap:0.2rem;
+
+}
+.secondnav{
+  
+  grid-area: secondnav;
+}
+.secondmain{
+  color: white;
+ 
+  padding: 10px;
+  grid-area: secondmain;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.sidebar{
+  grid-area: sidebar;
+}
+.trailers{
+  text-align: center;
+  font-style: italic;
+  color: white;
+  text-decoration: underline;
+  border: 1px solid white;
+  padding-bottom: 10px;
+}
+iframe{
+  height: 150px;
+}
+.content1{
+ grid-area: content1;
+ padding: 20px;
+}
+.creators{
+  max-width: 30%;
+}
+.content2{
+ grid-area: content2;
+ padding: 20px;
+}
+.content3{
+grid-area: content3;
+padding: 20px;
+}
+.secondfooter{
+  grid-area: secondfooter;
+}
+.aboutme{
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.container h5{
+  font-size: 30px;
+  float: right;
+  color: white;
+}
+
+.Contactpagegrid{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 1.5fr 1.5fr;
+  grid-template-areas:
+   "contactnav"
+   "Contactpage"
+   "contactfooter" ;
+}
+.contactnav{
+  grid-area: contactnav;
+}
+.Contactpage{
+ grid-area: Contactpage;
+ text-align: center;
+}
+.Contactpage h6{
+  color: white;
+  font-size: 15px;
+  text-decoration: underline;
+}
+.Contactpage legend{
+  color: white;
+}
+.contactfooter{
+ grid-area: contactfooter;
+}
+.contactform{
+  margin: 35px;
+}
+.input-field{
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #777;
+  border-radius: 14px;
+  outline: none;
+}
+.input-fieldtext{
+  height: 140px;
+  padding-top: 10px;
+  width: 400px;
+
+}
+.formbtn{
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 18px;
+  padding: 10px;
+  border: none;
+  background-color: #47c35a;
+  font-size: 12px;
+  cursor: pointer;
+}
+iframe{
+  width: 330px;
+  height: 150px;
+  
+}
+
+
+
+@media only screen and (max-width:550px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr ;
+    grid-template-areas: 
+    "secondnav"
+    "sidebar"
+    "secondmain"
+    "content1"
+    "content2"
+    "content3"
+    "secondfooter";
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .footer .inner-footer {
+    width: 90%;
+  }
+
+  .inner-footer .logo-container,
+  .inner-footer .footer-box1 {
+    width: 100%;
+    margin-bottom: 35px;
+    height: 15%;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .main {
+    flex: 3;
+  }
+  .aside1 {
+    order: 1;
+  }
+  .aside2 {
+    order: 2;
+  }
+  .main {
+    order: 2;
+  }
+  .footer {
+    order: 4;
+  }
+}
+@media all and (min-width: 400px) {
+  .aside1 {
+    flex: 1;
+  }
+}
